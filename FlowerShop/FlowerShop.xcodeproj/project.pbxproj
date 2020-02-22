@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB77B90F2401AE9800A8E59E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB77B90E2401AE9800A8E59E /* AppDelegate.swift */; };
+		BB77B9112401AE9800A8E59E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB77B9102401AE9800A8E59E /* SceneDelegate.swift */; };
+		BB77B9132401AE9800A8E59E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB77B9122401AE9800A8E59E /* ViewController.swift */; };
+		BB77B9162401AE9800A8E59E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB77B9142401AE9800A8E59E /* Main.storyboard */; };
+		BB77B9182401AE9F00A8E59E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB77B9172401AE9F00A8E59E /* Assets.xcassets */; };
+		BB77B91B2401AEA000A8E59E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB77B9192401AE9F00A8E59E /* LaunchScreen.storyboard */; };
+		BB77B9262401AEA000A8E59E /* FlowerShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB77B9252401AEA000A8E59E /* FlowerShopTests.swift */; };
+		BB77B9312401AEA000A8E59E /* FlowerShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB77B9302401AEA000A8E59E /* FlowerShopUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB77B9222401AEA000A8E59E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB77B9032401AE9800A8E59E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB77B90A2401AE9800A8E59E;
+			remoteInfo = FlowerShop;
+		};
+		BB77B92D2401AEA000A8E59E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB77B9032401AE9800A8E59E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB77B90A2401AE9800A8E59E;
+			remoteInfo = FlowerShop;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BB77B90B2401AE9800A8E59E /* FlowerShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowerShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB77B90E2401AE9800A8E59E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB77B9102401AE9800A8E59E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BB77B9122401AE9800A8E59E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BB77B9152401AE9800A8E59E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB77B9172401AE9F00A8E59E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB77B91A2401AE9F00A8E59E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB77B91C2401AEA000A8E59E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB77B9212401AEA000A8E59E /* FlowerShopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowerShopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB77B9252401AEA000A8E59E /* FlowerShopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerShopTests.swift; sourceTree = "<group>"; };
+		BB77B9272401AEA000A8E59E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB77B92C2401AEA000A8E59E /* FlowerShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowerShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB77B9302401AEA000A8E59E /* FlowerShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerShopUITests.swift; sourceTree = "<group>"; };
+		BB77B9322401AEA000A8E59E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB77B9082401AE9800A8E59E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB77B91E2401AEA000A8E59E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB77B9292401AEA000A8E59E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB77B9022401AE9800A8E59E = {
+			isa = PBXGroup;
+			children = (
+				BB77B90D2401AE9800A8E59E /* FlowerShop */,
+				BB77B9242401AEA000A8E59E /* FlowerShopTests */,
+				BB77B92F2401AEA000A8E59E /* FlowerShopUITests */,
+				BB77B90C2401AE9800A8E59E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB77B90C2401AE9800A8E59E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB77B90B2401AE9800A8E59E /* FlowerShop.app */,
+				BB77B9212401AEA000A8E59E /* FlowerShopTests.xctest */,
+				BB77B92C2401AEA000A8E59E /* FlowerShopUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB77B90D2401AE9800A8E59E /* FlowerShop */ = {
+			isa = PBXGroup;
+			children = (
+				BB77B90E2401AE9800A8E59E /* AppDelegate.swift */,
+				BB77B9102401AE9800A8E59E /* SceneDelegate.swift */,
+				BB77B9122401AE9800A8E59E /* ViewController.swift */,
+				BB77B9142401AE9800A8E59E /* Main.storyboard */,
+				BB77B9172401AE9F00A8E59E /* Assets.xcassets */,
+				BB77B9192401AE9F00A8E59E /* LaunchScreen.storyboard */,
+				BB77B91C2401AEA000A8E59E /* Info.plist */,
+			);
+			path = FlowerShop;
+			sourceTree = "<group>";
+		};
+		BB77B9242401AEA000A8E59E /* FlowerShopTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB77B9252401AEA000A8E59E /* FlowerShopTests.swift */,
+				BB77B9272401AEA000A8E59E /* Info.plist */,
+			);
+			path = FlowerShopTests;
+			sourceTree = "<group>";
+		};
+		BB77B92F2401AEA000A8E59E /* FlowerShopUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BB77B9302401AEA000A8E59E /* FlowerShopUITests.swift */,
+				BB77B9322401AEA000A8E59E /* Info.plist */,
+			);
+			path = FlowerShopUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB77B90A2401AE9800A8E59E /* FlowerShop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB77B9352401AEA000A8E59E /* Build configuration list for PBXNativeTarget "FlowerShop" */;
+			buildPhases = (
+				BB77B9072401AE9800A8E59E /* Sources */,
+				BB77B9082401AE9800A8E59E /* Frameworks */,
+				BB77B9092401AE9800A8E59E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlowerShop;
+			productName = FlowerShop;
+			productReference = BB77B90B2401AE9800A8E59E /* FlowerShop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB77B9202401AEA000A8E59E /* FlowerShopTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB77B9382401AEA000A8E59E /* Build configuration list for PBXNativeTarget "FlowerShopTests" */;
+			buildPhases = (
+				BB77B91D2401AEA000A8E59E /* Sources */,
+				BB77B91E2401AEA000A8E59E /* Frameworks */,
+				BB77B91F2401AEA000A8E59E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB77B9232401AEA000A8E59E /* PBXTargetDependency */,
+			);
+			name = FlowerShopTests;
+			productName = FlowerShopTests;
+			productReference = BB77B9212401AEA000A8E59E /* FlowerShopTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BB77B92B2401AEA000A8E59E /* FlowerShopUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB77B93B2401AEA000A8E59E /* Build configuration list for PBXNativeTarget "FlowerShopUITests" */;
+			buildPhases = (
+				BB77B9282401AEA000A8E59E /* Sources */,
+				BB77B9292401AEA000A8E59E /* Frameworks */,
+				BB77B92A2401AEA000A8E59E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB77B92E2401AEA000A8E59E /* PBXTargetDependency */,
+			);
+			name = FlowerShopUITests;
+			productName = FlowerShopUITests;
+			productReference = BB77B92C2401AEA000A8E59E /* FlowerShopUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB77B9032401AE9800A8E59E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Andrei Oltean";
+				TargetAttributes = {
+					BB77B90A2401AE9800A8E59E = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					BB77B9202401AEA000A8E59E = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = BB77B90A2401AE9800A8E59E;
+					};
+					BB77B92B2401AEA000A8E59E = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = BB77B90A2401AE9800A8E59E;
+					};
+				};
+			};
+			buildConfigurationList = BB77B9062401AE9800A8E59E /* Build configuration list for PBXProject "FlowerShop" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB77B9022401AE9800A8E59E;
+			productRefGroup = BB77B90C2401AE9800A8E59E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB77B90A2401AE9800A8E59E /* FlowerShop */,
+				BB77B9202401AEA000A8E59E /* FlowerShopTests */,
+				BB77B92B2401AEA000A8E59E /* FlowerShopUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB77B9092401AE9800A8E59E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB77B91B2401AEA000A8E59E /* LaunchScreen.storyboard in Resources */,
+				BB77B9182401AE9F00A8E59E /* Assets.xcassets in Resources */,
+				BB77B9162401AE9800A8E59E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB77B91F2401AEA000A8E59E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB77B92A2401AEA000A8E59E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB77B9072401AE9800A8E59E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB77B9132401AE9800A8E59E /* ViewController.swift in Sources */,
+				BB77B90F2401AE9800A8E59E /* AppDelegate.swift in Sources */,
+				BB77B9112401AE9800A8E59E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB77B91D2401AEA000A8E59E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB77B9262401AEA000A8E59E /* FlowerShopTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB77B9282401AEA000A8E59E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB77B9312401AEA000A8E59E /* FlowerShopUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB77B9232401AEA000A8E59E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB77B90A2401AE9800A8E59E /* FlowerShop */;
+			targetProxy = BB77B9222401AEA000A8E59E /* PBXContainerItemProxy */;
+		};
+		BB77B92E2401AEA000A8E59E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB77B90A2401AE9800A8E59E /* FlowerShop */;
+			targetProxy = BB77B92D2401AEA000A8E59E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB77B9142401AE9800A8E59E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB77B9152401AE9800A8E59E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB77B9192401AE9F00A8E59E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB77B91A2401AE9F00A8E59E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB77B9332401AEA000A8E59E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB77B9342401AEA000A8E59E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB77B9362401AEA000A8E59E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FlowerShop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andreioltean.mvvm.FlowerShop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB77B9372401AEA000A8E59E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FlowerShop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andreioltean.mvvm.FlowerShop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BB77B9392401AEA000A8E59E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FlowerShopTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andreioltean.mvvm.FlowerShopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlowerShop.app/FlowerShop";
+			};
+			name = Debug;
+		};
+		BB77B93A2401AEA000A8E59E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FlowerShopTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andreioltean.mvvm.FlowerShopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlowerShop.app/FlowerShop";
+			};
+			name = Release;
+		};
+		BB77B93C2401AEA000A8E59E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FlowerShopUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andreioltean.mvvm.FlowerShopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FlowerShop;
+			};
+			name = Debug;
+		};
+		BB77B93D2401AEA000A8E59E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FlowerShopUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andreioltean.mvvm.FlowerShopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FlowerShop;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB77B9062401AE9800A8E59E /* Build configuration list for PBXProject "FlowerShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB77B9332401AEA000A8E59E /* Debug */,
+				BB77B9342401AEA000A8E59E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB77B9352401AEA000A8E59E /* Build configuration list for PBXNativeTarget "FlowerShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB77B9362401AEA000A8E59E /* Debug */,
+				BB77B9372401AEA000A8E59E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB77B9382401AEA000A8E59E /* Build configuration list for PBXNativeTarget "FlowerShopTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB77B9392401AEA000A8E59E /* Debug */,
+				BB77B93A2401AEA000A8E59E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB77B93B2401AEA000A8E59E /* Build configuration list for PBXNativeTarget "FlowerShopUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB77B93C2401AEA000A8E59E /* Debug */,
+				BB77B93D2401AEA000A8E59E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB77B9032401AE9800A8E59E /* Project object */;
+}
