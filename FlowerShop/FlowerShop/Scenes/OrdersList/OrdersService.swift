@@ -16,10 +16,13 @@ enum OrdersResponse {
 class OrdersService {
     let network = AlamofireNetwork.shared
     
+    var orders: [Order] = []
+    
     func getAllOrders(_ completion: @escaping (OrdersResponse) -> Void) {
-        network?.getFlowerOrders() { result in
+        network?.getFlowerOrders() { [weak self] result in
             switch result {
             case .success(let orders):
+                self?.orders = orders
                 let vms = orders.map() { OrderViewModel($0) }
                 completion(.success(vms))
             case .failure:

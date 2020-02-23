@@ -13,6 +13,8 @@ class OrdersViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
+    weak var delegate: OrdersCoordinatorDelegate?
+    
     var viewModels: [OrderViewModel] = []
     
     let ordersService = OrdersService()
@@ -53,5 +55,14 @@ extension OrdersViewController: UITableViewDataSource {
         
         cell.order = viewModels[indexPath.row]
         return cell
+    }
+}
+
+extension OrdersViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let order = ordersService.orders[indexPath.row]
+        delegate?.showOrderDetails(with: order)
+        print("is is nil? \(delegate == nil)")
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }

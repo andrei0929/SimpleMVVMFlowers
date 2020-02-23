@@ -10,7 +10,6 @@
 		12E4DB48B2B0A577D48E2D17 /* Pods_FlowerShop_FlowerShopUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD9B329837E0B03C3BEEC83 /* Pods_FlowerShop_FlowerShopUITests.framework */; };
 		2230C0E755589BDBBDDC678C /* Pods_FlowerShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3E2420B5E62A3D03455F510 /* Pods_FlowerShop.framework */; };
 		BB77B90F2401AE9800A8E59E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB77B90E2401AE9800A8E59E /* AppDelegate.swift */; };
-		BB77B9112401AE9800A8E59E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB77B9102401AE9800A8E59E /* SceneDelegate.swift */; };
 		BB77B9132401AE9800A8E59E /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB77B9122401AE9800A8E59E /* OrdersViewController.swift */; };
 		BB77B9162401AE9800A8E59E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB77B9142401AE9800A8E59E /* Main.storyboard */; };
 		BB77B9182401AE9F00A8E59E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB77B9172401AE9F00A8E59E /* Assets.xcassets */; };
@@ -23,6 +22,9 @@
 		BB77B9502401CC6500A8E59E /* OrdersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB77B94F2401CC6500A8E59E /* OrdersService.swift */; };
 		BB77B9542401D2E400A8E59E /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB77B9522401D2E300A8E59E /* OrderTableViewCell.swift */; };
 		BB77B9552401D2E400A8E59E /* OrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB77B9532401D2E300A8E59E /* OrderTableViewCell.xib */; };
+		BB8BC4752402CCB200C65897 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8BC4742402CCB200C65897 /* SceneDelegate.swift */; };
+		BBF6AD1F2402A1A90064B9F5 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF6AD1E2402A1A90064B9F5 /* MainCoordinator.swift */; };
+		BBF6AD212402A4890064B9F5 /* OrderDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF6AD202402A4890064B9F5 /* OrderDetailsViewController.swift */; };
 		DA61FCFFCB4886882F5EABAF /* Pods_FlowerShopTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1BAC143446657D613BE4D1E /* Pods_FlowerShopTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,7 +54,6 @@
 		8DFAD10C41F7C828DCF178EC /* Pods-FlowerShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowerShop.release.xcconfig"; path = "Target Support Files/Pods-FlowerShop/Pods-FlowerShop.release.xcconfig"; sourceTree = "<group>"; };
 		BB77B90B2401AE9800A8E59E /* FlowerShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowerShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB77B90E2401AE9800A8E59E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BB77B9102401AE9800A8E59E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BB77B9122401AE9800A8E59E /* OrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
 		BB77B9152401AE9800A8E59E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB77B9172401AE9F00A8E59E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,6 +74,9 @@
 		BB77B94F2401CC6500A8E59E /* OrdersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersService.swift; sourceTree = "<group>"; };
 		BB77B9522401D2E300A8E59E /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
 		BB77B9532401D2E300A8E59E /* OrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderTableViewCell.xib; sourceTree = "<group>"; };
+		BB8BC4742402CCB200C65897 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BBF6AD1E2402A1A90064B9F5 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		BBF6AD202402A4890064B9F5 /* OrderDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsViewController.swift; sourceTree = "<group>"; };
 		CCDCCF77E49B316240E57B11 /* Pods-FlowerShop-FlowerShopUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowerShop-FlowerShopUITests.debug.xcconfig"; path = "Target Support Files/Pods-FlowerShop-FlowerShopUITests/Pods-FlowerShop-FlowerShopUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E1BAC143446657D613BE4D1E /* Pods_FlowerShopTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlowerShopTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3E2420B5E62A3D03455F510 /* Pods_FlowerShop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlowerShop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,8 +160,9 @@
 			children = (
 				BB77B94C2401C90F00A8E59E /* Configuration */,
 				BB77B90E2401AE9800A8E59E /* AppDelegate.swift */,
-				BB77B9102401AE9800A8E59E /* SceneDelegate.swift */,
+				BB8BC4742402CCB200C65897 /* SceneDelegate.swift */,
 				BB77B9142401AE9800A8E59E /* Main.storyboard */,
+				BBF6AD1E2402A1A90064B9F5 /* MainCoordinator.swift */,
 				BB77B9422401BDD400A8E59E /* Scenes */,
 				BB77B9472401BE8D00A8E59E /* Services */,
 				BB77B93E2401BC1D00A8E59E /* Models */,
@@ -197,8 +202,8 @@
 		BB77B9422401BDD400A8E59E /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				BB77B9442401BDE500A8E59E /* OrderDetails */,
 				BB77B9432401BDDB00A8E59E /* OrdersList */,
+				BB77B9442401BDE500A8E59E /* OrderDetails */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -217,6 +222,7 @@
 		BB77B9442401BDE500A8E59E /* OrderDetails */ = {
 			isa = PBXGroup;
 			children = (
+				BBF6AD202402A4890064B9F5 /* OrderDetailsViewController.swift */,
 			);
 			path = OrderDetails;
 			sourceTree = "<group>";
@@ -501,8 +507,10 @@
 				BB77B9542401D2E400A8E59E /* OrderTableViewCell.swift in Sources */,
 				BB77B9462401BE3E00A8E59E /* OrderViewModel.swift in Sources */,
 				BB77B9402401BC6600A8E59E /* Order.swift in Sources */,
-				BB77B9112401AE9800A8E59E /* SceneDelegate.swift in Sources */,
+				BB8BC4752402CCB200C65897 /* SceneDelegate.swift in Sources */,
 				BB77B94A2401BEAF00A8E59E /* AlamofireNetwork.swift in Sources */,
+				BBF6AD1F2402A1A90064B9F5 /* MainCoordinator.swift in Sources */,
+				BBF6AD212402A4890064B9F5 /* OrderDetailsViewController.swift in Sources */,
 				BB77B9502401CC6500A8E59E /* OrdersService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
