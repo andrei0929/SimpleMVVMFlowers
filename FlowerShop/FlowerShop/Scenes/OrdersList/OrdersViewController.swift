@@ -62,7 +62,6 @@ extension OrdersViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let order = ordersService.orders[indexPath.row]
         delegate?.showOrderDetails(with: order)
-        print("is is nil? \(delegate == nil)")
         tableView.deselectRow(at: indexPath, animated: true)
     }
 }

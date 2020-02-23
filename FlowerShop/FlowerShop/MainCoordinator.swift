@@ -22,16 +22,14 @@ class MainCoordinator: Coordinator, OrdersCoordinatorDelegate {
     var navigationController: UINavigationController
     
     init(navigationController: UINavigationController) {
+        navigationController.isNavigationBarHidden = true
         self.navigationController = navigationController
     }
     
-    lazy var mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-    lazy var ordersVC = mainStoryboard.instantiateInitialViewController() as? OrdersViewController
-    
     func start() {
-        guard let ordersController = self.ordersVC else { return }
-        ordersController.delegate = self
-        navigationController.pushViewController(ordersController, animated: false)
+        guard let ordersVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: String(describing: OrdersViewController.self)) as? OrdersViewController else { return }
+        ordersVC.delegate = self
+        navigationController.pushViewController(ordersVC, animated: false)
     }
     
     func showOrderDetails(with order: Order) {
