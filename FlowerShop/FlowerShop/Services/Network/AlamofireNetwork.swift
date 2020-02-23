@@ -6,7 +6,7 @@
 //  Copyright © 2020 Andrei Oltean. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import Alamofire
 
 class AlamofireNetwork {
@@ -33,6 +33,22 @@ class AlamofireNetwork {
             }
             let orders: [Order] = (try? JSONDecoder().decode([Order].self, from: data)) ?? []
             completion(.success(orders))
+        }
+    }
+    
+    func getImage(with imageURL: URL, completion: @escaping (Result<UIImage?, Error>) -> Void) {
+        AF.request(imageURL).responseData { response in
+            guard response.error == nil else {
+                completion(.failure(response.error!))
+                return
+            }
+            
+            guard let data = response.data else {
+                completion(.failure(AFError.responseValidationFailed(reason: .dataFileNil)))
+                return
+            }
+            let image = UIImage(data: data)
+            completion(.success(image))
         }
     }
 }

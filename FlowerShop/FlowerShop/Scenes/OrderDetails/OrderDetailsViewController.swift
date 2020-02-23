@@ -10,15 +10,41 @@ import UIKit
 
 class OrderDetailsViewController: UIViewController {
 
-    var coordinator: MainCoordinator?
+    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var flowersImageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var addresserLabel: UILabel!
+    @IBOutlet weak var addressLabel: UILabel!
+    
+    var delegate: OrderDetailsCoordinatorDelegate?
+    
+    var orderDetailViewModel: OrderDetailViewModel?
+    let orderDetailsService = OrderDetailsService()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        titleLabel.text = orderDetailViewModel?.description
+        addresserLabel.text = orderDetailViewModel?.addresser
+        addressLabel.text = orderDetailViewModel?.address
+        flowersImageView.image = #imageLiteral(resourceName: "FlowerPlaceholder")
+        
+        if let imageURL = orderDetailViewModel?.imageURL {
+            orderDetailsService.getImage(with: imageURL) { [weak self] result in
+                if case .success(let image) = result {
+                    self?.flowersImageView.image = image
+                }
+            }
+        }
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        titleLabel.layer.cornerRadius = 6
+        backButton.layer.cornerRadius = 6
     }
     
     @IBAction func goBack(_ sender: Any) {
-        coordinator?.goBack()
+        delegate?.goBack()
     }
 }

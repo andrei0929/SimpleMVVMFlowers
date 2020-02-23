@@ -18,7 +18,11 @@ protocol OrdersCoordinatorDelegate: class {
     func showOrderDetails(with order: Order)
 }
 
-class MainCoordinator: Coordinator, OrdersCoordinatorDelegate {
+protocol OrderDetailsCoordinatorDelegate: class {
+    func goBack()
+}
+
+class MainCoordinator: Coordinator, OrdersCoordinatorDelegate, OrderDetailsCoordinatorDelegate {
     var navigationController: UINavigationController
     
     init(navigationController: UINavigationController) {
@@ -34,7 +38,8 @@ class MainCoordinator: Coordinator, OrdersCoordinatorDelegate {
     
     func showOrderDetails(with order: Order) {
         guard let orderDetailsVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: String(describing: OrderDetailsViewController.self)) as? OrderDetailsViewController else { return }
-        orderDetailsVC.coordinator = self
+        orderDetailsVC.orderDetailViewModel = OrderDetailViewModel(order: order)
+        orderDetailsVC.delegate = self
         navigationController.pushViewController(orderDetailsVC, animated: true)
     }
     
