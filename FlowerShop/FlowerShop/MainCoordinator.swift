@@ -14,14 +14,6 @@ protocol Coordinator {
     func start()
 }
 
-protocol OrdersCoordinatorDelegate: class {
-    func showOrderDetails(with order: Order)
-}
-
-protocol OrderDetailsCoordinatorDelegate: class {
-    func goBack()
-}
-
 class MainCoordinator: Coordinator, OrdersCoordinatorDelegate, OrderDetailsCoordinatorDelegate {
     var navigationController: UINavigationController
     let network: AlamofireNetwork?

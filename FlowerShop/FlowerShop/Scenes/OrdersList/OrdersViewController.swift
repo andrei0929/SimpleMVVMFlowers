@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol OrdersCoordinatorDelegate: class {
+    func showOrderDetails(with order: Order)
+}
+
 class OrdersViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!

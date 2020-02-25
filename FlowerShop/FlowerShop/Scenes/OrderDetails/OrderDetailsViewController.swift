@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol OrderDetailsCoordinatorDelegate: class {
+    func goBack()
+}
+
 class OrderDetailsViewController: UIViewController {
 
     @IBOutlet weak var backButton: UIButton!
