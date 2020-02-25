@@ -14,11 +14,6 @@ class OrderTableViewCell: UITableViewCell {
     
     static let identifier = "OrderTableViewCell"
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-    
     var order: OrderViewModel? {
         didSet {
             descriptionLabel.text = order?.description

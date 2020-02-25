@@ -14,30 +14,37 @@ class AlamofireNetwork {
     
     let baseURL: String
     
-    init?() {
+    private init?() {
         let infoDictionary = Bundle.main.infoDictionary!
         guard let url = (infoDictionary["API_URL"] as? String)?.replacingOccurrences(of: "\\", with: "") else { return nil }
         baseURL = url
     }
     
     func getFlowerOrders(_ completion: @escaping (Result<[Order], Error>) -> Void) {
-        AF.request("\(baseURL)/orders", method: .get).response { response in
-            guard response.error == nil else {
-                completion(.failure(response.error!))
-                return
+        doRequest(url: "\(baseURL)/orders") { result in
+            switch result {
+            case .success(let data):
+                let orders: [Order] = (try? JSONDecoder().decode([Order].self, from: data)) ?? []
+                completion(.success(orders))
+            case .failure(let error):
+                completion(.failure(error))
             }
-            
-            guard let data = response.data else {
-                completion(.failure(AFError.responseValidationFailed(reason: .dataFileNil)))
-                return
-            }
-            let orders: [Order] = (try? JSONDecoder().decode([Order].self, from: data)) ?? []
-            completion(.success(orders))
         }
     }
     
-    func getImage(with imageURL: URL, completion: @escaping (Result<UIImage?, Error>) -> Void) {
-        AF.request(imageURL).responseData { response in
+    func getImageData(with imageURL: String, completion: @escaping (Result<Data?, Error>) -> Void) {
+        doRequest(url: imageURL) { result in
+            switch result {
+            case .success(let data):
+                completion(.success(data))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+    }
+    
+    private func doRequest(url: URLConvertible, completion: @escaping (Result<Data, Error>) -> Void) {
+        AF.request(url).response { response in
             guard response.error == nil else {
                 completion(.failure(response.error!))
                 return
@@ -47,8 +54,8 @@ class AlamofireNetwork {
                 completion(.failure(AFError.responseValidationFailed(reason: .dataFileNil)))
                 return
             }
-            let image = UIImage(data: data)
-            completion(.success(image))
+            
+            completion(.success(data))
         }
     }
 }

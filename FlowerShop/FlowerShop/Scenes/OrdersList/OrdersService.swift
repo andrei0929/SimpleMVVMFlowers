@@ -14,12 +14,15 @@ enum OrdersResponse {
 }
 
 class OrdersService {
-    let network = AlamofireNetwork.shared
-    
+    let network: AlamofireNetwork
     var orders: [Order] = []
     
+    init(network: AlamofireNetwork) {
+        self.network = network
+    }
+    
     func getAllOrders(_ completion: @escaping (OrdersResponse) -> Void) {
-        network?.getFlowerOrders() { [weak self] result in
+        network.getFlowerOrders() { [weak self] result in
             switch result {
             case .success(let orders):
                 self?.orders = orders

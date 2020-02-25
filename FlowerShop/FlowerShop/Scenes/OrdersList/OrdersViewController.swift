@@ -17,7 +17,7 @@ class OrdersViewController: UIViewController {
     
     var viewModels: [OrderViewModel] = []
     
-    let ordersService = OrdersService()
+    var ordersService: OrdersService?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +26,7 @@ class OrdersViewController: UIViewController {
         tableView.register(UINib(nibName: String(describing: OrderTableViewCell.self), bundle: nil), forCellReuseIdentifier: OrderTableViewCell.identifier)
         
         activityIndicator.startAnimating()
-        ordersService.getAllOrders { [weak self] result in
+        ordersService?.getAllOrders { [weak self] result in
             self?.activityIndicator.stopAnimating()
             switch result {
             case .success(let vms):
@@ -60,8 +60,9 @@ extension OrdersViewController: UITableViewDataSource {
 
 extension OrdersViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let order = ordersService.orders[indexPath.row]
-        delegate?.showOrderDetails(with: order)
+        if let order = ordersService?.orders[indexPath.row] {
+            delegate?.showOrderDetails(with: order)
+        }
         tableView.deselectRow(at: indexPath, animated: true)
     }
 }

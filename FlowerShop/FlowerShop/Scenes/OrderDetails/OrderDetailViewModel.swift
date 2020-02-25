@@ -12,12 +12,12 @@ struct OrderDetailViewModel {
     let description: String
     let addresser: String
     let address: String
-    let imageURL: URL?
+    let imageURL: String
     
     init(order: Order) {
         description = order.description
         addresser = order.deliverTo
         address = order.address
-        imageURL = URL(string: order.bouquetImage)
+        imageURL = order.bouquetImage
     }
 }

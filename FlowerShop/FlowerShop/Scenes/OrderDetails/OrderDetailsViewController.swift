@@ -19,7 +19,7 @@ class OrderDetailsViewController: UIViewController {
     var delegate: OrderDetailsCoordinatorDelegate?
     
     var orderDetailViewModel: OrderDetailViewModel?
-    let orderDetailsService = OrderDetailsService()
+    var orderDetailsService: OrderDetailsService?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,10 +30,8 @@ class OrderDetailsViewController: UIViewController {
         flowersImageView.image = #imageLiteral(resourceName: "FlowerPlaceholder")
         
         if let imageURL = orderDetailViewModel?.imageURL {
-            orderDetailsService.getImage(with: imageURL) { [weak self] result in
-                if case .success(let image) = result {
-                    self?.flowersImageView.image = image
-                }
+            orderDetailsService?.getImage(with: imageURL) { [weak self] imageViewModel in
+                self?.flowersImageView.image = imageViewModel.image
             }
         }
     }
