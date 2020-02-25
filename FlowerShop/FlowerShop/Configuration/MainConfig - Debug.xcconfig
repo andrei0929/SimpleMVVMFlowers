@@ -1,0 +1,13 @@
+//
+//  MainConfig.xcconfig
+//  FlowerShop
+//
+//  Created by Andrei Oltean on 22/02/2020.
+//  Copyright © 2020 Andrei Oltean. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Pods/Target Support Files/Pods-FlowerShop/Pods-FlowerShop.debug.xcconfig"
+#include "MainConfig.xcconfig"
