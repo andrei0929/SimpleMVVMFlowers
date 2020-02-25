@@ -6,7 +6,6 @@
 //  Copyright © 2020 Andrei Oltean. All rights reserved.
 //
 
-import UIKit
 import Alamofire
 
 class AlamofireNetwork {
